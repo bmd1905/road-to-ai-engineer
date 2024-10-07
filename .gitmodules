@@ -1,0 +1,3 @@
+[submodule "aivn-aio2024-mlops"]
+	path = aivn-aio2024-mlops
+	url = https://github.com/ThuanNaN/aivn-aio2024-mlops
