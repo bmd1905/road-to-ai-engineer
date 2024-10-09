@@ -1,9 +1,10 @@
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
 import crud
 import models
 import schemas
 from database import SessionLocal, engine
-from fastapi import Depends, FastAPI, HTTPException
-from sqlalchemy.orm import Session
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -11,7 +12,7 @@ app = FastAPI()
 
 
 # Dependency
-def get_db():
+async def get_db():
     db = SessionLocal()
     try:
         yield db
@@ -23,7 +24,10 @@ def get_db():
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     """Create a new user"""
     db_user = models.User(name=user.name, email=user.email)
-    return crud.create_user(db=db, user=db_user)
+    try:
+        return crud.create_user(db=db, user=db_user)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 @app.get("/users/{user_id}", response_model=schemas.User)

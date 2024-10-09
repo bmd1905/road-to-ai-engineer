@@ -9,14 +9,20 @@ class UserBase(BaseModel):
 
 
 class UserCreate(UserBase):
+    """User create schema"""
+
     pass
 
 
 class UserUpdate(UserBase):
+    """User update schema"""
+
     pass
 
 
 class User(UserBase):
+    """User schema"""
+
     id: int
 
     class Config:
