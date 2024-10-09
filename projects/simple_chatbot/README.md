@@ -1,5 +1,7 @@
 # ChatGPT-like Clone
 
+![CleanShot 2024-10-10 at 00 39 55@2x](https://github.com/user-attachments/assets/92040bc1-0227-4bda-b1ad-272201d0cde6)
+
 ## Overview
 This project is a web application that mimics the functionality of ChatGPT, allowing users to interact with an AI model in a chat format. Built using Streamlit, it provides a user-friendly interface for chatting with the AI.
 
