@@ -6,7 +6,7 @@ from fastapi.responses import StreamingResponse
 from openai import OpenAI
 from pydantic import BaseModel
 
-load_dotenv("../.env")
+load_dotenv()
 
 app = FastAPI()
 

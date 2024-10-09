@@ -7,6 +7,10 @@ st.title("ChatGPT-like clone")
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4o-mini"
 
+# Field for users to choose model from OpenAI
+model_options = ["gpt-4", "gpt-4o-mini"]
+st.session_state["openai_model"] = st.selectbox("Choose OpenAI Model:", model_options, index=model_options.index(st.session_state["openai_model"]))
+
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
