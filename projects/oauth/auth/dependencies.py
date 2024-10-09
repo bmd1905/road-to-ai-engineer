@@ -15,7 +15,7 @@ fake_users_db = {
         username="bmd",
         full_name="bmd1905",
         email="bmd@example.com",
-        hashed_password="$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
+        hashed_password="$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW", # hashed password for "secret"
         disabled=False,
     )
 }
