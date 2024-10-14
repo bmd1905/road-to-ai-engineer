@@ -1,6 +1,8 @@
 
 # ChatGPT-like Clone
 
+![Pipeline](./pipeline.png)
+
 ![CleanShot 2024-10-10 at 00 39 55@2x](https://github.com/user-attachments/assets/92040bc1-0227-4bda-b1ad-272201d0cde6)
 
 ## Overview
