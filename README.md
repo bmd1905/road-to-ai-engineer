@@ -7,8 +7,9 @@ This repository documents my journey towards becoming an AI Engineer. It's a col
 This repository is a work in progress and may contain incomplete or inaccurate information. It's meant to be a personal record of my learning process, not a definitive guide to becoming an AI engineer.
 
 ## Todo
-- [x] Dependency Management 
+- [x] Dependency Management
+- [x] Build simple chatbot video
 - [ ] Pre-commit Hooks 
 - [ ] Multi-stage Docker
 - [ ] Multi-threading and Multi-processing in Python
-- [ ] Build simple chatbot video
+
